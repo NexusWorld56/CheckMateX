@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Play - ChessMateX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+    <div class="board">
+        <!-- 64 Squares -->
+        <script>
+            for (let i = 0; i < 64; i++) {
+                document.write(`<div class="square ${ (Math.floor(i/8)+i)%2==0 ? 'light' : 'dark' }"></div>`);
+            }
+        </script>
+    </div>
+
+    <div class="game-info">
+        <h2>Player vs Opponent</h2>
+        <p>Time: 10:00</p>
+        <p>Rating Change: +0</p>
+    </div>
+
+</div>
+
+</body>
+</html>
